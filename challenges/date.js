@@ -9,4 +9,18 @@ function convertMilliseconds(M){
         return date.getUTCDay();
     }
 }
-console.log(convertMilliseconds(1613132555000));
+// console.log(convertMilliseconds(1613132555000));
+
+
+//
+function isValid(number) {
+    var result ="-404";
+    let correct = /^\+1 [6-9][0-9]{3} [0-9]{3} [0-9]{3}$/;
+    if(correct.test(number)){
+        result = 'Yes';
+    } else{
+        result = 'No';
+    }
+    return result;
+}
+// console.log(isValid("+1 5789 234 234"));
