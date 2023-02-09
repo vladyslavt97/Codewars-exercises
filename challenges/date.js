@@ -9,7 +9,7 @@ function convertMilliseconds(M){
         return date.getUTCDay();
     }
 }
-// console.log(convertMilliseconds(1613132555000));
+// console.log(convertMilliseconds(1613132555000)) ;
 
 
 //
