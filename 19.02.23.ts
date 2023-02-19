@@ -1,4 +1,4 @@
-//level 6 Take a Ten Minutes Walk
+//level 6 Take a Ten Minutes Walk!
 function isValidWalk(walk) {
   let arrS = [];
   let arrN = [];
