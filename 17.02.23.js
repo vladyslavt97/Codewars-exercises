@@ -52,3 +52,18 @@ function uniTotal (string) {
 // uniTotal('property')
 
 
+
+//Cats
+function solution(start, finish) {
+  let a = finish - start;
+  if (a % 3 === 0){
+    return a / 3;
+  } else{
+    let c = Math.floor(a/3);
+    let d = a - (c * 3);
+    let e = d / 1
+    return c + e;
+  }
+}
+
+// solution(13,23)
