@@ -53,3 +53,29 @@ function getAnagram(s) {
     }
     return operations;
 }
+
+
+
+//Murex = Dublin UI Software Developer
+function getTime(s) {
+    // Write your code here
+    let timeRequired = 0;
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let currentPosition = 0;
+    for (let i=0; i < s.length; i++){
+        let a = alphabet.indexOf(s[i])
+        
+        let position = Math.abs(currentPosition - a)
+        let secondPosition = Math.abs(26-position)
+        console.log('position;', position, 'secondPosition: ', secondPosition)
+        if(position < secondPosition){
+            timeRequired += position
+            currentPosition = a;
+        } else {
+            timeRequired += secondPosition
+            currentPosition = a;
+        }
+    }
+    console.log(timeRequired)
+    return timeRequired;
+}
