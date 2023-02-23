@@ -39,3 +39,11 @@ function numberToPower(number, power){
   }
   return total;
 }
+
+
+//Ternary
+const describeAge=a=>a<=12?"You're a(n) kid":a>=13&&a<=17?"You're a(n) teenager":a>=18&&a<=64?"You're a(n) adult":"You're a(n) elderly"
+
+//Index of an element in an array
+const find=(b,e)=>{ let a = b.indexOf(e)
+return a !== -1 ? a : "Not found";}
