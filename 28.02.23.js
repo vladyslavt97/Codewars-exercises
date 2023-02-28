@@ -17,3 +17,22 @@ function getInterval(note1, note2) {
     return index1 - index2 + 1;
   }
 }
+
+
+//Jenny the youngest detective
+function missingWord(nums, str) {
+  let arr = [];
+  let stringLowerCase = str.replace(/\s/g, '').toLowerCase();
+  let sortedNums = nums.sort(function(a, b) {
+    return a - b;
+  });
+  for (let i = 0; i<sortedNums.length; i++){
+    let foundLetter = stringLowerCase.charAt(sortedNums[i])
+    if(foundLetter){
+      arr.push(foundLetter)
+    } else {
+      return "No mission today"
+    }
+  }
+  return arr.toString().replace(/\,/g, '')
+}
