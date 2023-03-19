@@ -7,6 +7,8 @@ function getInterval(note1, note2) {
       allNotesOfKeyboard.push(`${notes[i]}${j}`)
     }
   }
+  // console.log('sdasda');
+  // console.log(allNotesOfKeyboard);
   let index1 = allNotesOfKeyboard.indexOf(note1)
   let index2 = allNotesOfKeyboard.indexOf(note2)
   if (index1 < index2){
@@ -17,6 +19,9 @@ function getInterval(note1, note2) {
     return index1 - index2 + 1;
   }
 }
+// getInterval();
+
+
 
 
 //Jenny the youngest detective
