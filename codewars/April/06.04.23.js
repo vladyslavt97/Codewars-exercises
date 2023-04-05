@@ -8,3 +8,6 @@ function sumEvenNumbers(input) {
   }
   return newNum;
 }
+
+//Between Extremes
+const betweenExtremes = (n) => Math.max(...n) - Math.min(...n)
