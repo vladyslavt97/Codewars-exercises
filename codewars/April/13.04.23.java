@@ -96,3 +96,20 @@ public class LastDigitChecker {
         }
     }
 }
+
+// All Factors
+public class FactorPrinter {
+    // write your code here
+    public static void printFactors(int number) {
+        if (number < 1) {
+            System.out.println("Invalid Value");
+        } else {
+            // String numberStr = Integer.toString(number)
+            for (int i = 1; i <= number; i++) {
+                if (number % i == 0) {
+                    System.out.println(i);
+                }
+            }
+        }
+    }
+}
