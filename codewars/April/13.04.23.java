@@ -113,3 +113,41 @@ public class FactorPrinter {
         }
     }
 }
+
+// Greatest Common Divisor
+public class GreatestCommonDivisor {
+    public static int getGreatestCommonDivisor(int first, int second) {
+        if (first < 10 || second < 10) {
+            return -1;
+        } else {
+            int commonDivisor = 1;
+            for (int i = 1; i <= first && i <= second; i++) {
+                if (first % i == 0 && second % i == 0) {
+                    commonDivisor = i;
+                }
+            }
+            return commonDivisor;
+        }
+    }
+}
+
+// Perfect Number (easy:)
+public class PerfectNumber {
+    // write your code here
+    public static boolean isPerfectNumber(int number) {
+        if (number < 1) {
+            return false;
+        } else {
+            int sum = 0;
+            for (int i = 1; i < number; i++) {
+                if (number % i == 0) {
+                    sum += i;
+                }
+            }
+            if (sum == number) {
+                return true;
+            }
+            return false;
+        }
+    }
+}
