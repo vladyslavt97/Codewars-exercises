@@ -8,3 +8,11 @@ function arrayPlusArray(arr1, arr2) {
   }
   return sum;
 }
+
+const reverseSeq = n => {
+  let arr = [];
+  for (let i = n; i >= 1; i--){
+    arr.push(i);
+  }
+  return arr;
+};
